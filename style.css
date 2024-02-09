@@ -1,0 +1,77 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: monospace;
+    box-sizing: border-box;
+}
+
+.container {
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 10px;
+}
+
+label, select  {
+    font-size: 1.5rem;
+    padding: 10px;
+    font-weight: bolder;
+    outline: none;
+    width: 300px;
+}
+
+.containerModal {
+    display: flex;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0000009d;
+    visibility: hidden;
+    transition: 0.5s all;
+}
+
+.containerModal .corpoModal {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.containerModal .corpoModal .linhaCircular {
+    border: 10px solid #dddddd;
+    width: 100px;
+    height: 100px;
+    padding: 50px;
+    border-radius: 50%;
+    border-right: 10px solid #0a0a0a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: loading 0.7s linear infinite;
+}
+.linhaCircular {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+} 
+
+.corpoModal p {
+    font-weight: bolder;
+    font-family: monospace;
+    letter-spacing: 2px;
+}
+
+@keyframes loading {
+    to {
+        transform: rotate(360deg);
+    }
+}

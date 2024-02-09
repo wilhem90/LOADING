@@ -1,2 +1,2 @@
 # LOADING_ANIMATION
- Vamos criar uma "Loading animation" com html e css básico 
+ Vamos criar uma "Loading animation" com Html e CSS e JavaSript básico 
