@@ -7,6 +7,9 @@
 
 body {
     background-image: url('images/aprender-a-programar-desde-cero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
 }
 
 .container {
@@ -18,6 +21,10 @@ body {
     align-items: center;
     margin: auto;
     border-radius: 10px;
+}
+
+label {
+    color: white;
 }
 
 label, select  {
@@ -35,7 +42,7 @@ label, select  {
     top: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #0000009d;
+    background-color: #4d82bb6b;
     visibility: hidden;
     transition: 0.5s all;
 }
