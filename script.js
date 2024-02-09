@@ -4,8 +4,8 @@ const loada = document.getElementById("loada")
 const containerModal = document.querySelector(".containerModal")
 
 escolha.addEventListener("change", (e) => {
-    const el = e.target.value
-    showModal(el)
+    const el = e.target
+    showModal(el.value)
 })
 
 
