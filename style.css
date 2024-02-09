@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url('images/aprender-a-programar-desde-cero.jpg');
+}
+
 .container {
     width:100vw;
     height: 100vh;
