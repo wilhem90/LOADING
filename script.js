@@ -48,7 +48,7 @@ function showModal(intervalo) {
 async function getUsers() {
     showModal(30000)
     try {
-        const reponse = await fetch("https://jsonplaceholder.typicode.com/todos")
+        const reponse = await fetch("http://127.0.0.1:5500/db/user.json")
     const data = await reponse.json()
     criatabela(data)
     } catch (error) {
@@ -98,11 +98,11 @@ function criatabela(data) {
         id++;
         const tr = createElement("tr")
         const td1 = createElement("td")
-        td1.innerText = user.id
+        td1.innerText = id
         tr.appendChild(td1)
 
         const td2 = createElement("td")
-        td2.innerHTML = user.title
+        td2.innerHTML = user.nome
         tr.appendChild(td2)
 
         const td3 = createElement("td")
@@ -118,7 +118,7 @@ function criatabela(data) {
         tr.appendChild(td5)
 
         const td6 = createElement("td")
-        td6.innerHTML = user.completed
+        td6.innerHTML = user.sexo
         tr.appendChild(td6)
         table.appendChild(tr)
     }
