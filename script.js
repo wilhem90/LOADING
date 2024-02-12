@@ -7,7 +7,7 @@ const container = document.getElementById("container")
 
 window.addEventListener('DOMContentLoaded', async() => {
     try {
-        const response = await fetch("http://127.0.0.1:5500/components/navbar.html")
+        const response = await fetch("/components/navbar.html")
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
@@ -20,7 +20,7 @@ window.addEventListener('DOMContentLoaded', async() => {
     }
 
     try {
-        const response = await fetch("http://127.0.0.1:5500/components/footer.html")
+        const response = await fetch("./components/footer.html")
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
@@ -48,7 +48,7 @@ function showModal(intervalo) {
 async function getUsers() {
     showModal(30000)
     try {
-        const reponse = await fetch("http://127.0.0.1:5500/db/user.json")
+        const reponse = await fetch("./db/user.json")
     const data = await reponse.json()
     criatabela(data)
     } catch (error) {
